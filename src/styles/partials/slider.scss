@@ -1,0 +1,101 @@
+/*-----How it works----------------------------------------*/
+.how__item{
+	margin-bottom: 0;
+	@include br(mobile){
+		margin-bottom: 10px;
+	}	
+}
+
+.slider {
+	max-width: 300px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	span{
+		display: block;
+		position: absolute;
+	    width: 70px;
+	    height: 20px;
+	    top: 50%;
+	    left: 20px;
+	    z-index: 2;
+	    text-transform: uppercase;
+	    line-height: 20px;
+	    background-color: #ff4e50;
+	    @include border-radius(10px);
+	    font-size: 10px;
+	    color: #fff;
+	    @include font(Montserrat-Regular,normal,normal);
+	    @include br(mobile){
+			top:30%;
+		}
+
+	}
+}
+.slide-list {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.slide-wrap {
+	position: relative;
+	left: 0px;
+	top: 0;
+	width: 10000000px;
+}
+.slide-item {
+	width: 300px;
+	float: left;
+	a{
+		display: block;
+		position: relative;
+		img{
+			@include br(mobile){
+				height: 240px;
+			}
+		}
+	}
+}
+
+.slide-item .info {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    padding: 20px 20px 0 20px;
+    text-align: left;
+    h3{
+    	font-size: 24px;
+    	color: #fff;
+    	@include font(Montserrat-bold,normal,normal);
+    }
+    p{
+    	margin-top: 15px;
+    	font-size: 14px;
+    	color: #cccccc;
+    	line-height: 18px;
+    	@include font(Roboto-light,normal,normal);
+    }
+}
+.prewbutton, .nextbutton{
+	display: block;
+    width: 30px;
+    height: 55px;
+    position: absolute;
+    top: 35%;
+    text-indent: -999px;
+    background: url(../images/arrows.png) left center no-repeat;
+    z-index: 3;
+    outline: none !important;
+    @include br(mobile){
+		top:5%;
+	}
+}
+.prewbutton{
+	left:20px;
+}
+.nextbutton {
+    right: 20px;
+    background: url(../images/arrows.png) right center no-repeat;
+}

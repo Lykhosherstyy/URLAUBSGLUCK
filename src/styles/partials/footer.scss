@@ -1,0 +1,75 @@
+/*-----Footer----------------------------------------*/
+.footer{
+	padding: 35px 0;
+	border-top: 6px solid #ff4e50;
+	@include br(mobile){
+		padding: 10px;
+	}
+}
+.footer__nav{
+	display: table;
+	width: 100%;
+	@include br(mobile){
+		display: block;
+	}	
+	.nav__item{
+		display: table-cell;
+		text-align: left;
+		@include clr();
+		@include br(mobile){
+			display: block;
+			text-align: center;
+			width: 280px;
+    		margin: 10px auto 0;
+		}	
+		.nav__item__heading{
+			margin-bottom: 15px;
+			color: #333333;
+			font-size: 14px;
+			@include font(Montserrat-bold,normal,normal);
+			@include br(mobile){
+				margin-bottom: 0;
+			}
+		}
+		ul li{
+			float: none;
+			@include br(mobile){
+				float: left;
+				margin-right: 10px;
+			}
+				a{
+					font-size: 14px;
+					color: #666666;
+					line-height: 24px;
+					@include font(Roboto-light,normal,normal);
+				}
+		}
+	}
+	.logo{
+		width: 33%;
+		text-align: left;
+		font-size: 16px;
+		@include font(Montserrat-bold,normal,normal);
+		a{
+			color: #ff4e50;
+		}
+	}
+}
+.creator{
+	min-width: 110px;
+	text-align: right;
+	height:45px;
+	background: url(../images/design_logo.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	@include br(mobile){
+		background-position: center;
+		text-align: center;
+			}
+	span{
+		text-transform: uppercase;
+		font-size: 10px;
+		color: #cccccc;
+		@include font(Montserrat-bold,normal,normal);
+	}
+}

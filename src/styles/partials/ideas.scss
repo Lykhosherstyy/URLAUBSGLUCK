@@ -1,0 +1,61 @@
+/*-----Ideas----------------------------------------*/
+.ideas_item{
+	float: left;
+	.ideas_item-wrap{
+		position: relative;
+		height:310px;
+		margin-bottom: 20px;
+		overflow: hidden;
+		background-position: center;
+		@include background-size(cover);
+		@include border-radius(4px);
+		.overlay{				
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(51,51,51,0.7);
+			&:before{
+				display: inline-block;
+				vertical-align: middle;
+				content: '';
+	   			height: 100%;
+			}
+			&:hover{
+				background-color: rgba(51,51,51,0.35);
+			}
+			h5{
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 22px;
+				color: #fff;
+				line-height: 28px;
+				@include font(Montserrat-bold,normal,normal);
+
+			}
+		}
+	}
+}
+.sport{
+	background: url(../images/sport.png);
+}
+.health{
+	background: url(../images/health.png);
+}
+.extreme{
+	background: url(../images/Extreme.png);
+	
+}
+.games{
+	background: url(../images/games.png);
+}
+.culture{
+	background: url(../images/culture.png);
+}
+.relax{
+	background: url(../images/relax.png);
+}
+.travelling{
+	background: url(../images/travelling.png);
+}

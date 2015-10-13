@@ -1,0 +1,33 @@
+/*-----Search----------------------------------------*/
+.search{
+	p{
+		font-size: 18px;
+		color: #333333;
+		@include br(mobile){
+			margin-bottom: 15px;
+		}	
+	}
+}
+.search__form{
+	.search__form__input{
+		display: inline-block;
+	    width: 240px;
+	    height: 40px;
+	    padding: 0 15px;
+	    background-color: transparent;
+	    border: 1px solid #cccccc;
+	    @include border-radius(5px);
+	    @include box-shadow(1px,1px, 0,#EEEEEE);
+	    @include br(mobile){
+			width: 280px;
+		}	
+	}
+	.search__form__button{
+		font-size: 14px;
+	    color:#fff ;
+	    background-color:#ff4e50;
+	    @include br(mobile){
+			width: 280px;
+		}	
+	}
+}

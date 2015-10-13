@@ -1,0 +1,76 @@
+$gutter:10px;
+$columns:12;
+.wrapper{
+	min-width: 320px;
+	overflow: hidden;
+}
+.container{
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+img{
+	width: 100%;
+}
+p{
+	@include font(Roboto-light,normal,normal);
+}
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+	@include font(Montserrat-bold,normal,normal);
+	@include border-radius(30px);
+    background-color: #ff4e50;
+    border: 2px solid #ff4e50;
+}
+.row{
+	margin-left: $gutter/-1;
+	margin-right: $gutter/-1;
+	@include clr();
+}
+@for $i from 1 through $columns{
+	.col-#{$i}{
+		float: left;
+		width:percentage((1/$columns)*$i);
+	}
+}
+.col-3{
+	@include br(phablet){
+		width: 50%;
+	}
+	@include br(mobile){
+		width: 100%;
+	}	
+}
+.col-4{
+	@include br(mobile){
+		float: none;
+		width: 100%;
+	}	
+}
+.col-8{
+	@include br(mobile){
+		width: 100%;
+	}	
+}
+.col{
+	position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.title{
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 22px;
+	color: #333333;
+	@include font(Montserrat-bold,normal,normal);
+}
+.indent{
+	margin-top: 100px;
+	text-align: center;
+	@include br(phablet){
+		margin-top: 35px;
+	}	
+}

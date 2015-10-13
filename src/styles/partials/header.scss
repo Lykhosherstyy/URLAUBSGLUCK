@@ -1,0 +1,58 @@
+/*-----Header----------------------------------------*/
+.header{
+	position: absolute;
+	top: 0;
+    left: 0;
+    right: 0;
+    padding: 35px 0;
+    @include clr();
+    @include br(mobile){
+		padding: 20px 0;
+	}	
+
+}
+.header__logo{
+	float: left;
+    position: relative;
+    top: 10px;
+    @include br(mobile){
+		display: block;
+	    float: none;
+	    text-align: center;
+	    margin-top: 100px;
+	}	
+    h1{
+    	@include font(Montserrat-bold,normal,normal);
+    	font-size: 20px;
+    	a{
+    		color: #fff;
+    	}
+    }
+}
+.header__nav{
+	float: right;
+	@include br(mobile){
+		float: none;
+	    width: 160px;
+	    margin: 0 auto;
+	}
+}
+.nav{
+	li{
+		display: inline-block;
+		a{
+			font-size: 14px;
+			color: #fff;
+			@include font(Montserrat-bold,normal,normal);
+		}
+		.bordered{
+			display: inline-block;
+			margin-left: 15px;
+		    padding: 0 16px;
+		    line-height: 30px;
+		    text-align: center;
+		    border: 2px solid #fff;
+		    @include border-radius(30px);
+		}
+	}
+}
