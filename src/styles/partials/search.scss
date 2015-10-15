@@ -23,9 +23,14 @@
 		}	
 	}
 	.search__form__button{
+		outline: none;
 		font-size: 14px;
 	    color:#fff ;
 	    background-color:#ff4e50;
+	    &:hover{
+	    	background-color: #fff;
+	    	color: #ff4e50;
+	    }
 	    @include br(mobile){
 			width: 280px;
 		}	

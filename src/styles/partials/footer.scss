@@ -31,18 +31,25 @@
 				margin-bottom: 0;
 			}
 		}
-		ul li{
-			float: none;
-			@include br(mobile){
-				float: left;
-				margin-right: 10px;
-			}
-				a{
-					font-size: 14px;
-					color: #666666;
-					line-height: 24px;
-					@include font(Roboto-light,normal,normal);
+		ul {
+			display: inline-block;
+			@include clr();
+			li{
+				float: none;
+				@include br(mobile){
+					float: left;
+					margin-right: 10px;
 				}
+					a{
+						font-size: 14px;
+						color: #666666;
+						line-height: 24px;
+						@include font(Roboto-light,normal,normal);
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+			}
 		}
 	}
 	.logo{
@@ -58,7 +65,7 @@
 .creator{
 	min-width: 110px;
 	text-align: right;
-	height:45px;
+	height:55px;
 	background: url(../images/design_logo.png);
 	background-position: right;
 	background-repeat: no-repeat;

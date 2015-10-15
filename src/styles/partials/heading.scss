@@ -37,5 +37,9 @@
 		color: #fff;
 		font-size: 14px;
     	padding: 12px 25px;
+    	&:hover{
+    		background: transparent;
+    		color: #ff4e50;
+    	}
 	}
 }

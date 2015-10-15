@@ -7,13 +7,14 @@
 }
 .partners__item{
 	.item_inner{
-	margin: 0 auto;
 		@include br(mobile){
 			margin-bottom: 25px;
 		}
 	}	
 	.img_wrap{
 		position: relative;
+		width: 120px;
+		margin: 0 auto;
 	}
 	.circle_bg{
 		width: 120px;
@@ -41,18 +42,12 @@
 .circle_bg_small{
 	position: absolute;
 	z-index: 3;
-	right: 45px;
+	right: -5px;
     bottom: -5px;
 	width: 40px;
 	height: 40px;
 	border: 5px solid #fff;
 	@include border-radius(50%);
-	@include br(phablet){
-		right: 115px;
-	}
-	@include br(mobile){
-		right:155px;
-	}
 	.fa{
 		text-align: center;
 		padding: 8px 0 0 0px;
@@ -75,4 +70,8 @@
     font-size: 14px;
     color: #ff4e50;
     background-color: transparent;
+    &:hover{
+    	background-color: #ff4e50;
+    	color: #fff;
+    }
 }

@@ -44,6 +44,9 @@
 			font-size: 14px;
 			color: #fff;
 			@include font(Montserrat-bold,normal,normal);
+			&:hover{
+				color: #000;
+			}
 		}
 		.bordered{
 			display: inline-block;
@@ -53,6 +56,9 @@
 		    text-align: center;
 		    border: 2px solid #fff;
 		    @include border-radius(30px);
+		    &:hover{
+		    	background-color: #fff;
+		    }
 		}
 	}
 }
